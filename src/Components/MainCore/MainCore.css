@@ -1,0 +1,55 @@
+.MainCore{
+    /* background: #f7931a; */
+    background: #232323;;
+    width: 100%;
+    height: 100vh;
+}
+.TopLink{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.RightLink{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.LeftLink{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: rotate(180deg);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    
+}
+
+.BottomLink{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    transform: translate(-50%,0);
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}

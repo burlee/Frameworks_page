@@ -1,0 +1,52 @@
+.Main{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .25s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main header h1{
+    font-weight: 400;
+}
+.Current{
+    color: #FFEB3B;
+}
+.Open{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.Open div{
+    width: 80px;
+    height: 1px;
+    background: black;
+    margin-top: 10px;
+}
+.Close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.Close div{
+    width: 40px;
+    height: 1px;
+    background: black;
+    margin-top: 10px;
+}
+.Close div:nth-child(1){
+    transform: rotate(45deg) translate(16px,7px);
+}
+.Close div:nth-child(2){
+    transform: rotate(-45deg) translate(0px, 8px);
+}

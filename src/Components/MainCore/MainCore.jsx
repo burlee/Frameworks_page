@@ -3,8 +3,8 @@ import classes from './MainCore.css';
 import Main from '../Main/Main';
 import Aux from '../../HOC/aux_x'
 import { Route, NavLink, Switch } from 'react-router-dom'
-import BlockchainExplain from '../BlockchainExplainComponent/BlockchainExplain';
-import CryptoCurrency from '../CryptoCurrency/CryptoCurrency';
+import ReactJS from '../ReactJS/ReactJS';
+import AngularJS from '../AngularJS/AngularJS';
 
 export default class MainCore extends Component {
     state = {
@@ -38,11 +38,11 @@ export default class MainCore extends Component {
         return (
             <Aux>
                 <main className={classes.MainCore}>
-                    <NavLink className={classes.TopLink}  to="/czym-jest-blockchain">ReactJS</NavLink>
-                    <NavLink className={classes.RightLink}  to="/kryptowaluty">AngularJS</NavLink>
-                    <a className={classes.LeftLink} href="#///">Czym jest Bitcoin?</a>
+                    <NavLink className={classes.TopLink}  to="/reactjs">ReactJS</NavLink>
+                    <NavLink className={classes.RightLink}  to="/angularjs">AngularJS</NavLink>
+                    <a className={classes.LeftLink} href="#///">VueJS</a>
                     {/* <a className={classes.RightLink} href="#///">Kryptowaluty</a> */}
-                    <a className={classes.BottomLink} href="#///">Giełdy</a>
+                    <a className={classes.BottomLink} href="#///">Czym jest framework?</a>
                     <Main 
                         BackgroundColor={this.state.BackgroundColor} 
                         MainIsToggle={this.state.MainIsToggle} 
@@ -54,8 +54,8 @@ export default class MainCore extends Component {
                 </main>
 
                 <Switch>
-                    <Route path='/czym-jest-blockchain' component={BlockchainExplain} />
-                    <Route path='/kryptowaluty' component={CryptoCurrency} />
+                    <Route path='/reactjs' component={ReactJS} />
+                    <Route path='/angularjs' component={AngularJS} />
                 </Switch>
             </Aux>
         )

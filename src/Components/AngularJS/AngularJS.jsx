@@ -1,9 +1,9 @@
 import React from 'react'
-import classes from './CryptoCurrency.css'
+import classes from './AngularJS.css'
 
 export default () => {
   return (
-    <div className={classes.CryptoCurrency}>
+    <div className={classes.AngularJS}>
       Witam
     </div>
   )

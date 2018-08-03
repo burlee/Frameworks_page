@@ -6,7 +6,7 @@
 }
 .TopLink{
     text-decoration: none;
-    color: white;
+    color: #00d8ff;
     font-size: 12px;
     position: absolute;
     left: 50%;
@@ -17,7 +17,7 @@
 }
 .RightLink{
     text-decoration: none;
-    color: white;
+    color: #c40030;
     font-size: 12px;
     position: absolute;
     writing-mode: vertical-lr;
@@ -30,11 +30,11 @@
 
 .LeftLink{
     text-decoration: none;
-    color: white;
+    color: #41b883;
     font-size: 12px;
     writing-mode: vertical-lr;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 20px;
     transform: rotate(180deg);
     letter-spacing: 1.4px;

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export default () => {
   return (
     <div className={classes.Footer}>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/">start</NavLink>
     </div>
   )
 }

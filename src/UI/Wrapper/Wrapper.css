@@ -4,3 +4,21 @@
     padding: 25px;
     box-sizing: border-box;
 }
+.Wrapper h1{
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+}
+.Wrapper img{
+    width: 35px;
+    height: 35px;
+    filter: grayscale(100%);
+}
+.Wrapper p{
+    text-align: justify;
+    text-align-last: center;
+    margin-top: 10px;
+}

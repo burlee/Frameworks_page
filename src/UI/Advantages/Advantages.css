@@ -1,0 +1,6 @@
+.Advantages li{
+    list-style-type: none;
+    background: #c5c5c5;
+    padding: 10px;
+    margin-bottom: 1px;
+}

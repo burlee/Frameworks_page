@@ -13,9 +13,7 @@
 .Main header h1{
     font-weight: 400;
 }
-.Current{
-    color: #FFEB3B;
-}
+
 .Open{
     position: absolute;
     top: 20px;

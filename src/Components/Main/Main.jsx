@@ -3,7 +3,6 @@ import classes from './Main.css'
 
 export default class Main extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className={classes.Main} style={{background: this.props.BackgroundColor, width: this.props.MainWidth+'%', height: this.props.MainHeight+'%'}}>
         {this.props.MainIsToggle ? null : 

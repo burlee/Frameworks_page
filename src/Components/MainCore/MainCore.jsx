@@ -5,6 +5,7 @@ import Aux from '../../HOC/aux_x'
 import { Route, NavLink, Switch } from 'react-router-dom'
 import ReactJS from '../ReactJS/ReactJS';
 import AngularJS from '../AngularJS/AngularJS';
+import Vue from '../Vue/Vue';
 
 export default class MainCore extends Component {
     state = {
@@ -12,7 +13,8 @@ export default class MainCore extends Component {
         BackgroundColor: '#FFFFFF',
         MainHeight: 100,
         MainWidth: 100,
-        MainIsToggle: false
+        MainIsToggle: false,
+        showInfo: false
     }
 
     resizeMainDivToggle = () => {
@@ -33,16 +35,24 @@ export default class MainCore extends Component {
             })
         }
     }
-
+    frameworkInformationToggle = () => {
+        this.setState({showInfo: !this.state.showInfo})
+    }
     render() {
         return (
             <Aux>
                 <main className={classes.MainCore}>
                     <NavLink className={classes.TopLink}  to="/reactjs">ReactJS</NavLink>
                     <NavLink className={classes.RightLink}  to="/angularjs">AngularJS</NavLink>
-                    <a className={classes.LeftLink} href="#///">VueJS</a>
-                    {/* <a className={classes.RightLink} href="#///">Kryptowaluty</a> */}
-                    <a className={classes.BottomLink} href="#///">Czym jest framework?</a>
+                    <NavLink className={classes.LeftLink}  to="/vue">VueJS</NavLink>
+
+                    {this.state.showInfo ? null
+                    : <a onClick={this.frameworkInformationToggle} className={classes.BottomLink}>Czym jest framework?</a>
+                    }
+
+                    {this.state.showInfo ? 
+                    <p onClick={this.frameworkInformationToggle} className={classes.BottomLink}>Jest narzędziem wspomagającym i przyśpieszającym budowanie naszej aplikacji</p>
+                    : null }
                     <Main 
                         BackgroundColor={this.state.BackgroundColor} 
                         MainIsToggle={this.state.MainIsToggle} 
@@ -56,6 +66,7 @@ export default class MainCore extends Component {
                 <Switch>
                     <Route path='/reactjs' component={ReactJS} />
                     <Route path='/angularjs' component={AngularJS} />
+                    <Route path='/vue' component={Vue} />
                 </Switch>
             </Aux>
         )

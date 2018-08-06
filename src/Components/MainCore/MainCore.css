@@ -4,6 +4,9 @@
     width: 100%;
     height: 100vh;
 }
+.MainCore p {
+    cursor: pointer;
+}
 .TopLink{
     text-decoration: none;
     color: #FFFFFF;
@@ -43,6 +46,7 @@
 }
 
 .BottomLink{
+    cursor: pointer;
     text-decoration: none;
     color: white;
     font-size: 12px;

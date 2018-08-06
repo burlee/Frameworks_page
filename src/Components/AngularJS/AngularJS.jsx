@@ -10,13 +10,14 @@ export default () => {
       <Wrapper>
         <h1>
           AngularJS
-          <img src={AngularIMG} alt="AngularJS" srcset=""/>
+          <img src={AngularIMG} alt="AngularJS"/>
         </h1>
-        <p>Pełnoprawny framework udostępniający nam wszystkie narzędzia do budowania aplikacji.</p>
+        <p>Pełnoprawny framework udostępniający nam wszystkie narzędzia i zależności do budowania aplikacji.</p>
         <Advantages>
-          <h3>Zalety</h3>
+          <h3>Zalety i wady:</h3>
           <li>Angular jest wspierany przez Google</li>
-          <li>Pełnoprawny framework</li>
+          <li>Używany do największych projektów</li>
+          <li>Najcięższy do nauki</li>
         </Advantages>
       </Wrapper>
     </div>
